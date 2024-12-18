@@ -8,10 +8,16 @@
 </head>
 <body>
     <header>
-        <h1>BEST R/UNIXPORN SETUPS</h1>
+        <div class="header-container">
+            <h1>BEST R/UNIXPORN SETUPS</h1>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search setups...">
+                <button id="search-btn">Search</button>
+            </div>
+        </div>
     </header>
 
-    <div class="gallery">
+    <div class="gallery" id="gallery">
         <div class="setup-box">
             <a href="https://github.com/Axarva/dotfiles-2.0" target="_blank">
                 <img src="https://raw.githubusercontent.com/Axarva/dotfiles-2.0/refs/heads/main/screenshots/sidebar.png" alt="xmonad">
@@ -172,5 +178,8 @@
     <footer>
         <p>Created by @user7210unix ❤️</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
