@@ -33,12 +33,6 @@
 
 ### :octocat: ‎ <sup><sub><samp>HI THERE! THANKS FOR DROPPING BY!</samp></sub></sup>
 
-    ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 
-<div align="center">
-
-  ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 
-
-
 
 <h3 align="center">
     <a href="#----setup-----wiki-----gallery-----tip-jar"><tt>👆 Back to top</tt></a>
