@@ -7,7 +7,7 @@
   <h2 style="font-size: 24px;">
     <strong> <a href="https://user7210unix.github.io/topunixsite/" style="text-decoration: none; color: inherit;">
       <img src="https://user7210unix.github.io/topunixsite/favicon.ico" alt=" " style="vertical-align: middle; width: 24px; height: 24px; margin-right: 8px;">
-      Gallery for the Best Linux Setups</a> 
+      Link to the Website</a> 
     </strong>
   </h2>
 </div>
