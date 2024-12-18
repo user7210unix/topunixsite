@@ -70,41 +70,58 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    margin-top: 20px;
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #f8f8f2;
     text-align: left;
+    margin: 0;
+    line-height: 1.2; /* Ensures vertical alignment with search */
 }
 
 .search-container {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
 .search-container input {
-    padding: 8px 12px;
+    padding: 10px 14px;
     font-size: 1em;
-    border-radius: 4px;
-    border: 1px solid #444;
-    background-color: #282a36;
+    border-radius: 30px;
+    border: none;
+    background-color: #383b4a;
     color: #ffffff;
     outline: none;
+    transition: all 0.3s ease;
+    width: 250px;
+}
+
+.search-container input:focus {
+    background-color: #44475a;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .search-container button {
-    padding: 8px 16px;
+    padding: 10px 20px;
     font-size: 1em;
-    border-radius: 4px;
+    border-radius: 30px;
     border: none;
-    background-color: #6272a4;
+    background: linear-gradient(45deg, #6272a4, #50fa7b);
     color: #ffffff;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .search-container button:hover {
-    background-color: #44475a;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(80, 250, 123, 0.4);
 }
 
+.search-container button:active {
+    transform: scale(0.95);
+}
