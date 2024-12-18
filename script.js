@@ -1,12 +1,20 @@
-document.querySelectorAll('.setup-box').forEach(box => {
-    box.addEventListener('mouseenter', () => {
-        box.style.transform = 'scale(1.1)';
-        box.style.boxShadow = '0 0 20px rgba(0, 0, 0, 0.8)';
-    });
+document.getElementById('search-btn').addEventListener('click', function () {
+    const searchValue = document.getElementById('search').value.toLowerCase();
+    const setups = document.querySelectorAll('.setup-box');
 
-    box.addEventListener('mouseleave', () => {
-        box.style.transform = 'scale(1)';
-        box.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.5)';
+    setups.forEach(setup => {
+        const title = setup.querySelector('.setup-title').innerText.toLowerCase();
+        if (title.includes(searchValue)) {
+            setup.style.display = 'block';
+        } else {
+            setup.style.display = 'none';
+        }
     });
 });
 
+// Enable search on pressing Enter
+document.getElementById('search').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+        document.getElementById('search-btn').click();
+    }
+});
