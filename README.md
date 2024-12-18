@@ -36,6 +36,9 @@
 - **Minimal** :bento: 
 - **Fast** :blossom: 
 - **Search for Window Managers** :rocket:
-- **Regulare Updates** :rocket: 
+- **Regulare Updates** :rocket:
+- **Written in Html** :blossom:
+- **Written in Css** :rocket: 
+- **Written in JavaScript** :bento:  
 
 ### :octocat: ‎ <sup><sub><samp>HI THERE! THANKS FOR DROPPING BY!</samp></sub></sup>
