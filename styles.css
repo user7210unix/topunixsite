@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Lock Scrolling */
+html, body {
+    overflow: hidden; /* Prevent scrolling */
+    width: 100%;
+    height: 100%;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background: url('https://9to5mac.com/wp-content/uploads/sites/6/2019/07/apple_champs_elysees_boardroom.jpg?quality=82&strip=all&w=1600') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: inset 1px 1.5px 2px #fff9, inset 1px -0.5px 2px #ffffff4d,
+                0 0.602px 0.602px -1.25px #0000002e,
+                0 2.288px 2.288px -2.5px #00000029,
+                0 10px 10px -3.75px #00000010;
+    backdrop-filter: blur(30px); /* Added blur for polished look */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Search Button */
+#search-btn {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: inset 1px 1.5px 2px #fff9, inset 1px -0.5px 2px #ffffff4d,
+                0 0.602px 0.602px -1.25px #0000002e,
+                0 2.288px 2.288px -2.5px #00000029,
+                0 10px 10px -3.75px #00000010;
+    backdrop-filter: blur(30px); /* Added blur to match setup-box */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+#search-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Page Container */
+#page-container {
+    width: 100%;
+    max-width: 800px;
+    height: calc(100vh - 160px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Page Layout */
+.page {
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+.page.active {
+    display: grid;
+}
+
+/* Card Styling */
+.card {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: inset 1px 1.5px 2px #fff9, inset 1px -0.5px 2px #ffffff4d,
+                0 0.602px 0.602px -1.25px #0000002e,
+                0 2.288px 2.288px -2.5px #00000029,
+                0 10px 10px -3.75px #00000010;
+    backdrop-filter: blur(30px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.setup-box img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.setup-title {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    text-align: center; /* Centered title */
+}
+
+/* Navigation Buttons */
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+    gap: 20px;
+}
+
+.nav-button {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: inset 1px 1.5px 2px #fff9, inset 1px -0.5px 2px #ffffff4d,
+                0 0.602px 0.602px -1.25px #0000002e,
+                0 2.288px 2.288px -2.5px #00000029,
+                0 10px 10px -3.75px #00000010;
+    backdrop-filter: blur(30px); /* Added blur to buttons */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.nav-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .page {
+        grid-template-columns: 1fr; /* One column for smaller screens */
+    }
+}

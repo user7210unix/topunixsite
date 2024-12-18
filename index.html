@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <div class="header">
+            <div class="title">Linux Setup Gallery</div>
+            <button class="nav-button" id="search-btn">Search</button>
+        </div>
+
+        <!-- Page Container -->
+        <div id="page-container">
+            <!-- Page 1 -->
+            <div class="page" data-page="1">
+                <!-- Place the first batch of setup boxes here -->
+                <div class="setup-box">
+                    <div class="card">
+                        <a href="https://github.com/Axarva/dotfiles-2.0" target="_blank">
+                            <img src="https://raw.githubusercontent.com/Axarva/dotfiles-2.0/refs/heads/main/screenshots/sidebar.png" alt="xmonad">
+                        </a>
+                        <div class="setup-title">✨ Xmonad</div>
+                    </div>
+                </div>
+                <div class="setup-box">
+                    <div class="card">
+                        <a href="https://github.com/3r3bu5x9/prismatic-night" target="_blank">
+                            <img src="https://raw.githubusercontent.com/3r3bu5x9/Prismatic-Night/refs/heads/master/screenshots/all.png" alt="openbox">
+                        </a>
+                        <div class="setup-title">🐧 OpenBox</div>
+                    </div>
+                </div>
+                <div class="setup-box">
+                    <div class="card">
+                        <a href="https://github.com/waffle87/dots/tree/kepler" target="_blank">
+                            <img src="https://raw.githubusercontent.com/waffle87/dots/refs/heads/kepler/etc/img/fetch.png" alt="i3">
+                        </a>
+                        <div class="setup-title">📀 I3</div>
+                    </div>
+                </div>
+                <div class="setup-box">
+                    <div class="card">
+                        <a href="https://github.com/DominatorXS/HyprlandDotfiles" target="_blank">
+                            <img src="https://raw.githubusercontent.com/user7210unix/topunixsite/refs/heads/main/topunixsite/assets/8.png" alt="hyprland">
+                        </a>
+                        <div class="setup-title">🍨 Hyprland</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 2 -->
+            <div class="page" data-page="2">
+                <!-- Add the remaining setup boxes here -->
+                <div class="setup-box">
+                    <div class="card">
+                        <a href="https://github.com/user7210unix/i3-perfect-dotfiles/tree/main" target="_blank">
+                            <img src="https://raw.githubusercontent.com/user7210unix/topunixsite/refs/heads/main/topunixsite/assets/7.png" alt="i3">
+                        </a>
+                        <div class="setup-title">🫐 I3</div>
+                    </div>
+                </div>
+                <div class="setup-box">
+                    <div class="card">
+                        <a href="https://github.com/siduck/chadwm" target="_blank">
+                            <img src="https://raw.githubusercontent.com/siduck/chadwm/refs/heads/screenshots/screenshots/initial_look.png" alt="chadwm">
+                        </a>
+                        <div class="setup-title">💐 ChadWM</div>
+                    </div>
+                </div>
+                <div class="setup-box">
+                    <div class="card">
+                        <a href="https://github.com/rzlfathurrahman/dotfiles-1?tab=readme-ov-file" target="_blank">
+                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/072e191f-a0a5-4be2-bc7a-55eb140b254f/de6w8m7-cd71503c-d923-48e1-bb7c-cd439c7976bb.png/v1/fill/w_1192,h_670,q_70,strp/eyecandy_theme_v2_by_owl4ce_de6w8m7-pre.jpg" alt="chadwm">
+                        </a>
+                        <div class="setup-title">🎨 OpenBox</div>
+                    </div>
+                </div>
+                <div class="setup-box">
+                    <div class="card">
+                        <a href="https://github.com/AlphaTechnolog/dotfiles" target="_blank">
+                            <img src="https://raw.githubusercontent.com/AlphaTechnolog/dotfiles/refs/heads/dwm/.github/assets/banner.png" alt="Dwm">
+                        </a>
+                        <div class="setup-title">🙌 Dwm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="navigation">
+            <button class="nav-button" id="back-btn">Back</button>
+            <button class="nav-button" id="next-btn">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
